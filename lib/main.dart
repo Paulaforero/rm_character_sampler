@@ -5,6 +5,7 @@ void main() {
   runApp(const App());
 }
 
+/*
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key, required this.title});
   final String title;
@@ -50,3 +51,4 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 }
+*/
