@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:rm_character_sampler/screens/on_boarding.dart';
+import 'package:rm_character_sampler/screens/character_detail.dart';
 
 class App extends StatelessWidget {
   const App({super.key});
@@ -7,7 +8,11 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'RMCharacterSampler',
-      home: const OnBoarding(),
+      initialRoute: '/',
+      routes: {
+        '/': (context) => const OnBoarding(),
+        '/random-character': (context) => const CharacterDetail(),
+      },
     );
   }
 }
